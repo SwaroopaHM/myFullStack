@@ -1,0 +1,318 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-image: url("./assets/images/forest-bgImage.jpg");
+ }
+
+ .container {
+  width: 100%;
+  padding: 15px;
+  margin: 50px auto;
+} 
+
+/* Page header */
+
+.header {
+  width: 300px;
+  height: 115px;
+padding: 20px;
+  background-color: #CC0000;
+  font-family: 'Gill Sans';
+font-size: 70px;
+color: white;
+}
+
+/* Login page*/
+
+.form-container {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+text-align: center;
+color: #f1f1f1;
+background-color: #CC0000;
+}
+
+.form-footer {
+  background-color: #CC0000;
+}
+
+/* Style inputs, select elements and textareas */
+.form-group{
+display: flex;
+justify-content: space-between;
+margin: 10px;
+font-family: Arial;
+font-size: 18px;
+color: #FFF;
+}
+
+.form-control{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.form-button {
+  background-color: #CC9900;
+  border-radius: 6px;
+  border: solid #775900;
+  padding: 5px 20px 3px 20px;
+  float: right;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.form-error {
+  color: white;
+  background-color: #ee675d;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Side Navigation */
+
+.sidenav {
+ width: 100%;
+/* min-height: 500px;  */
+background-color: #F2F2F2;
+  z-index: 1;
+  padding: 20px;
+}
+
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #666666;
+}
+
+.nav-col {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #CC0000;
+}
+
+.nav-item {
+  text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    color: #cc0000;
+}
+
+.nav-item-active {
+  text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    color: #666666;
+}
+
+.main-content{
+height: auto;
+background-color: #F2F2F2;
+padding:20px;
+width: 100%;
+}
+
+.main-content-header {
+  display: flex;
+}
+
+.main-content-header-text {
+  padding: 0px 10px 0px 10px;
+}
+
+.main-content-description-header {
+  font-size: 18px;
+color: #CC0000;
+}
+
+#description-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#description-table td, #description-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#description-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#description-table tr:hover {background-color: #ddd;}
+
+#description-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #C1C1C1;
+  color: white;
+}
+
+.dashboard-description-footer {
+  display: flex;
+  
+}
+
+/* Admin portal */
+
+.column1 {
+    height: auto;
+}
+
+.column2 {
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.list-item {
+  margin:13px 0 13px 0;
+}
+
+.list-item-name{
+  margin: 0px 3px;  
+  display: inline-flex;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  width: 100%;
+  }
+
+  .main-content{ 
+    width: 100%;
+  }
+  .sidenav a {font-size: 18px;}
+  
+}
+
+@media (min-width: 306px) {
+  .container {
+      width: 300px;
+  }
+  .column1 {
+    width: 100%;
+    
+    height: auto;
+  }
+  
+  .column2 {
+    width: 100%;
+    
+    height: auto;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .container {
+      width: 540px;
+  }
+  .column1 {
+    width:100%;
+    
+    height: auto;
+  }
+  
+  .column2 {
+    width: 100%;
+    
+    height: auto;
+  }
+
+}
+@media (min-width: 768px) {
+  .container {
+      width: 720px;     
+  }
+  .form-container {
+    width: 715px;
+    height: 326px;
+    text-align: left;
+  }
+  .form-error {
+    width: 715px;
+  }
+  
+  .main-content{ 
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      width: 912px;
+  }
+}
+  
+@media (min-width: 1200px) {
+  .container {
+      width: 1140px;
+  }
+  .column1 {
+    width: 14%;
+    float: left;
+    height: auto;
+  }
+  
+  .column2 {
+    width: 70%;
+    float:right;
+    height: auto;
+  }
+.main-content{
+    margin-left: 10px;
+    width: 688px;
+    min-height: auto;
+    padding: 30px;
+}
+
+.nav-col {
+  width: 100%;
+}
+
+.nav-col {
+  width: 100%;
+  padding: 15px 0px;  
+}
+
+  .sidenav {
+    padding-top: 15px;
+  width: 300px;
+  min-height: 500px;
+  }
+  
+  #description-table {
+    padding: 10px 0 10px 0px
+  }
+
+  .dashboard-description-footer {
+  justify-content: space-between;
+  }
+}
+
+
+
+
+
